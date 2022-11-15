@@ -8,13 +8,13 @@
     <title>Memory Charger</title>
 </head>
 <body>
-    <header>
+    <header class="heading">
         <!-- Title of Game -->
         <h1>Memory Charger</h1>
     </header>
     <section>
         <!-- Rules / Theme and reset buttons -->
-        <div class="modal_options">
+        <div class="modal-options">
             <span class="button" id="playBtn">How to play</span>
             <span class="button" id="themeBtn">Choose Theme</span>
             <span class="button" id="resetBtn" onclick="reset()">Reset</span>
@@ -22,9 +22,201 @@
     </section>
     <section class="game-container">
         <!-- Card details/images -->
-        <div class="animals"></div>
-        <div class="sport"></div>
-        <div class="space"></div>
+        <ul id="animal-cards" class="cards">
+            <li class="card">
+                <div class = "front-card" data-framework="cat">
+                    <img class="front-face" src="assets/images/cat.webp" alt="Cat">
+                </div>
+                <div class = "back-card">
+                    <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
+                </div>
+            </li>
+            <li class="card">
+                <div class="front-card" data-framework="cat">
+                    <img class="front-face" src="assets/images/cat.webp" alt="Cat">
+                </div>
+                <div class="back-card">
+                    <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
+                </div>
+            </li>
+            <li class="card">
+                <div class="front-card" data-framework="chicken">
+                    <img class="front-face" src="assets/images/chicken.webp" alt="Chicken">
+                </div>
+                <div class="back-card">
+                    <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="front-card" data-framework="chicken">
+                    <img class="front-face" src="assets/images/chicken.webp" alt="Chicken">
+                </div>
+                <div class="back-card">
+                    <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
+                </div>
+            </li>
+    
+            <li class="card">
+                <div class="front-card" data-framework="cows">
+                    <img class="front-face" src="assets/images/cows.webp" alt="Cows">
+                </div>
+                <div class="back-card">
+                    <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="front-card" data-framework="cows">
+                    <img class="front-face" src="assets/images/cows.webp" alt="Cows">
+                </div>
+                <div class="back-card">
+                    <img class="back-face" src="assets/images/card-back-image.webp" alt="Spiral Card">
+                </div>
+            </li>
+            
+            <li class="card">
+                <div class="front-card" data-framework="dogs">
+                    <img class="front-face" src="assets/images/dog.webp" alt="Dogs">
+                </div>
+                <div class="back-card">
+                    <img 
+                    class="back-face"
+                    src="assets/images/card-back-image.webp"
+                    alt="Spiral Card">
+                </div>
+            </li>
+            
+            <li class="card">
+                <div class="front-card" data-framework="dogs">
+                    <img class="front-face" src="assets/images/dog.webp" alt="Dogs">
+                </div>
+                <div class="back-card">
+                    <img
+                    class="back-face"
+                    src="assets/images/card-back-image.webp"
+                    alt="Spiral Card">
+                </div>
+            </li>
+            
+            <li class="card">
+                <div class="front-card" data-framework="fish-pond">
+                    <img
+                    class="front-face"
+                    src="assets/images/fish-pond.webp"
+                    alt="fish-pond">
+                </div>
+                <div class="back-card">
+                    <img
+                    class="back-face"
+                    src="assets/images/card-back-image.webp"
+                    alt="Spiral Card">
+                </div>
+            </li>
+            
+            <li class="card">
+                <div class="front-card" data-framework="fish-pond">
+                    <img class="front-face" src="assets/images/fish-pond.webp" alt="fish-pond">
+                </div>
+                <div class="back-card">
+                    <img
+                    class="back-face"
+                    src="assets/images/card-back-image.webp"
+                    alt="Spiral Card">
+                </div>
+            </li>
+            
+            <li class="card">
+                <div class="front-card" data-framework="guinea-pig">
+                    <img
+                    class="front-face"
+                    src="assets/images/guinea-pig.webp"
+                    alt="Guinea-pig">
+                </div>
+                <div>
+                    <img
+                    class="back-face"
+                    src="assets/images/card-back-image.webp"
+                    alt="Spiral Card">
+                </div>
+            </li>
+            <li class="card">
+                <div class="front-card" data-framework="guinea-pig">
+                    <img
+                    class="front-face"
+                    src="assets/images/guinea-pig.webp"
+                    alt="Guinea-pig">
+                </div>
+                <div class="back-card">
+                    <img
+                    class="back-face"
+                    src="assets/images/card-back-image.webp"
+                    alt="Spiral Card">
+                </div>
+            </li>
+            <li class="card">
+                <div class="front-card" data-framework="parrots">
+                    <img
+                    class="front-face"
+                    src="assets/images/parrots.webp"
+                    alt="Parrots">
+                </div>
+                <div class="back-card">
+                    <img
+                    class="back-face"
+                    src="assets/images/card-back-image.webp"
+                    alt="Spiral Card">
+              </div>
+            </li>
+            <li class="card">
+                <div class="front-card" data-framework="parrots">
+                    <img
+                    class="front-face"
+                    src="assets/images/parrots.webp"
+                    alt="Parrots">
+                </div>
+                <div class="back-card">
+                    <img
+                    class="back-face"
+                    src="assets/images/card-back-image.webp"
+                    alt="Spiral Card">
+                </div>
+            </li>
+            <li class="card">    
+                <div class="front-card" data-framework="rabbits">
+                    <img
+                    class="front-face"
+                    src="assets/images/rabbits.webp"
+                    alt="Rabbits">
+                </div>
+                <div class="back-card">
+                    <img
+                    class="back-face"
+                    src="assets/images/card-back-image.webp"
+                    alt="Spiral Card">
+                </div>
+            </li>
+            <li class="card">
+                <div class="front-card" data-framework="rabbits">
+                    <img
+                    class="front-face"
+                    src="assets/images/rabbits.webp"
+                    alt="Rabbits">
+                </div>
+                <div class="back-card">
+                    <img
+                    class="back-face"
+                    src="assets/images/card-back-image.webp"
+                    alt="Spiral Card">
+                </div>
+            </li>
+        </ul>
+
+
+
+
+        <ul class="sport-cards">
+        <ul class="space-cards">
     </section>
     <footer> Created by JD for Code Institute Portfolio Project 2</footer>
 </body>
